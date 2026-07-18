@@ -56,7 +56,7 @@ router.get('/', async (req, res) => {
 					let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
 					await delay(800);
 				   let b64data = Buffer.from(data).toString('base64');
-				   let session = await Qr_Code_By_Arslan_Tech.sendMessage(Qr_Code_By_Arslan_Tech.user.id, { text: 'ARSLAN-MD~' + b64data });
+				   let session = await Qr_Code_By_Arslan_Tech.sendMessage(Qr_Code_By_Arslan_Tech.user.id, { text: 'Kaif-MD~' + b64data });
 	
 				   let Arslan_MD_TEXT = `
 ╔════════════════════◇
@@ -69,7 +69,7 @@ router.get('/', async (req, res) => {
 ---
 
 ╔════════════════════◇
-║『 YOU'VE CHOSEN Arslan-MD 』
+║『 YOU'VE CHOSEN KAif-MD 』
 ║ -Set the session ID in Heroku:
 ║ - SESSION_ID: 
 ╚════════════════════╝
